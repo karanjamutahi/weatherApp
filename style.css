@@ -1,0 +1,35 @@
+html{
+    font-family : 'Helvetica Neue','Helvetica', sans-serif !important;
+}
+
+.card{
+    box-shadow: white !important;
+}
+
+.card-title{
+    font-weight: 600 !important;
+}
+
+.card-action#bottom{
+    border-top:2px solid white !important;
+}
+
+#weatherIcon{
+    margin: 0 auto !important;
+    font-size:100px;
+}
+
+#windhold{
+border-right: 1px solid white;
+border-left: 1px solid white;
+}
+
+#location{
+    font-size:70px;
+    font-weight:600;
+    padding: 40px 0 ;
+    }
+
+    td{
+        width: 33%
+    }
