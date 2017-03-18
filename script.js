@@ -1,5 +1,8 @@
 var ready = false;
 
+// var temp;
+// var tempf;
+
 if (ready === false){
 //document hasn't loaded yet
 
@@ -43,29 +46,32 @@ $("#windhold").html(windSpeed + "  kph");
 $("#timehold").html(description);
 });
 
-/*function tempConvert(){
+//    /*
+counter = 0;
+function tempConvert(){
     ++counter;
-    if ("#temphold").html.indexOf(&#8451;)>-1{
-     isCelsius = true ;
- }
+    console.log("clicked "+counter+" times" );
+   tempf = ((temp*(9/5)) + 32).toFixed(2) ;
+   console.log(tempf);
 
-else {
-     isCelsius = false;
-    }
-tempf =() temp*(9/5)) + 32 ;
-
-if (counter%2 === 0){
-$("temphold").html(tempf + "  &#8457;");
-isCelsius = false;
+if (counter%2 === 1){
+$("#temphold").html(tempf + "  &#8457;");
+$("#converter").html("&#8451;");
+console.log("Changed to Farenheit");
 }
 
 else{
     $("#temphold").html(temp +"  &#8451;");
-    isCelsius = true;
+    $("#converter").html("&#8457;");
+    console.log("Changed back to celsius");
 }
     
- }
-*/
+}
+ // End of the function 
+
+$("#converter").click(tempConvert);
+//     */
+
 
     });
 }

@@ -14,9 +14,12 @@ html{
     border-top:2px solid white !important;
 }
 
-#weatherIcon{
+#weatherIcon{ 
     margin: 0 auto !important;
     font-size:100px;
+}
+#iconDiv{
+    margin: 0 auto;
 }
 
 #windhold{
@@ -32,4 +35,8 @@ border-left: 1px solid white;
 
     td{
         width: 33%
+    }
+
+    a,a:hover{
+      text-decoration: none;  
     }
