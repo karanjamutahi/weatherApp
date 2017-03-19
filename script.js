@@ -19,11 +19,15 @@ $.ajax({
 cache:false
 });
 
-if(navigator.geolocation){
-    navigator.geolocation.getCurrentPosition(function(position){
-        longitude = position.coords.longitude;
-        latitude = position.coords.latitude;
-        console.log(longitude+","+latitude+"........local");
+$.getJSON("http://ip-api.com/json", function(coords){
+latitude = coords.lat;
+longitude = coords.lon;
+console.log(coords);
+console.log(latitude);
+console.log(longitude);
+
+
+
 
         key = 'c44251d51d44f26a9a2c3283edbb1ffb';
          apiURL = "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&units=metric&APPID="+key;
@@ -74,12 +78,10 @@ $("#converter").click(tempConvert);
 
 
     });
-}
-
-else {
-    window.alert("Location Access Denied. Please enable SSL");
-}
-console.log('Coords = ('+longitude+','+latitude+')');
-
-
 });
+
+
+// console.log('Coords = ('+longitude+','+latitude+')');
+
+
+// });
